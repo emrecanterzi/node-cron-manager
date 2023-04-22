@@ -1,0 +1,23 @@
+{
+  "name": "cron-manager-node",
+  "version": "1.0.1",
+  "main": "src/index.js",
+  "author": "@emrecanterzi",
+  "description": "A central management suite that simplifies cron operations",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "keywords": [
+    "node-cron",
+    "cron",
+    "cron-manager",
+    "cron manager",
+    "cron job manager"
+  ],
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {}
+}
