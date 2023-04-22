@@ -1,6 +1,6 @@
 {
   "name": "cron-manager-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "author": "@emrecanterzi",
   "description": "A central management suite that simplifies cron operations",
@@ -19,5 +19,9 @@
     "node-cron": "^3.0.2",
     "uuid": "^8.3.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emrecanterzi/node-cron-manager"
+  }
 }
