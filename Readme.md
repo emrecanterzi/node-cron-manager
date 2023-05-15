@@ -5,7 +5,7 @@ This package is for cron jobs and to make them easier.
 #### How to Use:
 
 ```javascript
-const CronJobManager = require("./src/index"); // import package
+const CronJobManager = require("cron-manager-node"); // import package
 
 const cronJobManager = new CronJobManager(); // create a manager
 
