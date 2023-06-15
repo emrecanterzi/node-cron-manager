@@ -14,17 +14,20 @@ class CronJobManager {
   addJob({ name, patern, fn }) {
     this.#jobs[name] = cron.schedule(patern, fn, {});
   }
+  
   removeJob(name) {
     this.#jobs[name].stop();
     const newJobs = {};
     Object.keys(this.#jobs).forEach((key) => {
       if (key != name) newJobs[key] = this.#jobs[key];
     });
-    this.jobs = newJobs;
+    this.#jobs = newJobs;
   }
+
   stopJob(name) {
     this.#jobs[name].stop();
   }
+
   startJob(name) {
     this.#jobs[name].start();
   }
@@ -36,6 +39,10 @@ class CronJobManager {
         this.addJob(cronJob);
       });
     }
+  }
+
+  getJobs() {
+    return this.#jobs;
   }
 }
 
