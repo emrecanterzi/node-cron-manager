@@ -1,6 +1,6 @@
 {
   "name": "cron-manager-node",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/index.js",
   "author": "@emrecanterzi",
   "description": "A central management suite that simplifies cron operations",
