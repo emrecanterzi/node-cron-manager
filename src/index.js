@@ -14,9 +14,9 @@ class CronJobManager {
   addJob({ name, patern, fn }) {
     this.#jobs[name] = cron.schedule(patern, fn, {});
   }
-  
+
   removeJob(name) {
-    this.#jobs[name].stop();
+    this.#jobs[name]?.stop();
     const newJobs = {};
     Object.keys(this.#jobs).forEach((key) => {
       if (key != name) newJobs[key] = this.#jobs[key];
@@ -25,11 +25,11 @@ class CronJobManager {
   }
 
   stopJob(name) {
-    this.#jobs[name].stop();
+    this.#jobs[name]?.stop();
   }
 
   startJob(name) {
-    this.#jobs[name].start();
+    this.#jobs[name]?.start();
   }
 
   startStore() {
